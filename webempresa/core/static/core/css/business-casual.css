@@ -1,0 +1,442 @@
+body {
+  font-family: 'Lora';
+  background: linear-gradient(rgb(208, 249, 255), rgb(208, 249, 255));
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#main-title {
+  
+  font-size: 4rem;
+  color: #000000;
+  font-weight: 400;
+  font-family: Arial Rounded Bold;
+  text-align: center;
+}
+
+#sub-title.site-heading-upper {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #00eaff;
+  text-align: center;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Arial Rounded Bold';
+}
+
+p {
+  line-height: 1.75;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.site-heading {
+  margin-top: 80px;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  font-family: 'Arial Rounded Bold';
+}
+
+.site-heading .site-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.site-heading .site-heading-lower {
+  font-size: 5rem;
+  font-weight: 100;
+  color: black;
+}
+
+.page-section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-heading {
+  text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  padding-bottom:.5rem;
+
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+
+.section-heading .section-heading-under {
+  display: block;
+  font-size: 1rem;
+  text-transform: none;
+  font-weight: 300;
+  margin-top:.5rem;
+}
+
+.bg-faded {
+  background-color: rgba(255, 255, 255);
+}
+
+.rectangle {
+  width: 100%;  /* Ajusta el ancho según tus necesidades */
+  height: 70px; /* Ajusta la altura según tus necesidades */
+  background-color: #3498db; /* Color de fondo del rectángulo */
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
+
+
+
+#logo {
+  width: 14rem; /* Ajusta el tamaño del logo según sea necesario */
+  position: fixed; /* Fija la posición del logo */
+  top: 0px;/* Ajusta la distancia desde la parte superior */
+  left: 0px; /* Ajusta la distancia desde el lado derecho */
+  z-index: 1000;
+}
+
+
+#mainNav {
+  display: flex;
+  justify-content: flex-end; /* Alinea los elementos a la derecha */
+  position: fixed; /* Fija el elemento en la ventana */
+  top: 0; /* Fija el elemento en la parte superior de la ventana */
+  right: 0; /* Coloca el elemento en el lado derecho de la ventana */
+  /* Otros estilos según sea necesario */
+  font-family: 'Arial Rounded Bold';
+  z-index: 1000;
+
+}
+
+
+#mainNav .navbar-brand {
+  color: #00eaff;
+  margin-left: 80px;
+  width: auto;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+}
+#mainNav .navbar-nav .nav-item.active .nav-link{
+  color: rgb(85, 76, 255)
+}
+@media (min-width: 992px) {
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 0.9rem;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: rgb(85, 76, 255);
+  }
+  #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+    color: rgb(85, 76, 255)
+  }
+}
+
+
+/* Menú desplegable para moviles */
+@media (max-width: 991.98px) {
+  #mainNav .navbar-collapse {
+    padding: 1rem;
+    background-color: #3498db;
+    margin-top: 30px;
+  }
+  #mainNav .navbar-brand {
+    display: none; /* Oculta el título del menú desplegable en dispositivos móviles */
+  }
+  #mainNav .navbar-toggler {
+    position: absolute; /* Establece una posición absoluta para el botón */
+    right: 15px; /* Ajusta la distancia desde el borde derecho de la pantalla */
+    top: 15px; /* Ajusta la distancia desde el borde superior de la pantalla */
+    z-index: 999; /* Asegura que el botón esté por encima de otros elementos */
+  }
+
+  .section-heading .section-heading-lower {
+    width: 80%; /* Ajusta el ancho del contenedor según sea necesario */
+    font-size: 2rem;
+    text-align: left;
+  }
+}
+
+.btn-xl {
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.intro {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .intro .intro-img {
+    width: 75%;
+    float: right;
+  }
+  .intro .intro-text {
+    left: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro .intro-text .intro-button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro .intro-text {
+    width: 45%;
+  }
+}
+
+
+
+.cta .cta-inner {
+  margin-bottom: 3rem;
+  margin-top: -10rem;
+  position: relative;
+  padding: 3rem;
+  margin: -2rem;
+  background-color: rgb(255, 251, 251);
+}
+
+.cta .cta-inner:before {
+  border-radius: 0.5rem;
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  border: 0.25rem solid rgb(255, 255, 255);
+}
+
+
+/* cuadro blanco blog */
+.cta .cta-innerv {
+  position: relative;
+  padding: 3rem ;
+  background-color: rgb(255, 255, 255);
+}
+
+#blog_container_1.cta-innerv,
+#blog_container_2.cta-innerv,
+#blog_container_3.cta-innerv{
+  margin-bottom: 3rem;
+  margin-top: -1rem;
+  
+}
+
+
+@media (min-width: 992px) {
+  .about-heading .about-heading-img {
+    position: relative;
+    z-index: 0;
+  }
+  .about-heading .about-heading-content {
+    margin-top: -5rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .product-item .product-item-title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -3rem;
+  }
+  .product-item .product-item-img {
+    position: relative;
+    z-index: 0;
+    max-width: 60vw;
+  }
+  .product-item .product-item-description {
+    position: relative;
+    z-index: 1;
+    margin-top: -3rem;
+    max-width: 50vw;
+  }
+}
+
+.list-hours {
+  font-size: 0.9rem;
+}
+
+/* Visitanos estilos */
+.list-hours .list-hours-item {
+  border-bottom: 1px solid rgb(2, 2, 2);
+  padding-bottom: .25rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.list-hours .list-hours-item.today {
+  font-weight: bold;
+  color: #ff0000;
+}
+
+@media (min-width: 992px) {
+  .list-hours {
+    width: 50%;
+    font-size: 1.1rem;
+  }
+}
+
+.address strong {
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: #3498db;
+}
+
+.text-primary {
+  color: #e6a756;
+}
+
+.bg-primary {
+  background-color: #ffffff !important;
+}
+
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(21, 138, 255, 0.1);
+}
+
+/* estilo botones (visitanos/enviar) */
+.btn-primary {
+  background-color: #3498db;
+  
+}
+
+/* botones solo cuando el mouse está encima*/
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #ff90fd;
+  
+}
+
+.font-weight-light {
+  font-weight: 100 !important;
+}
+
+.mbtm{
+  padding-top: 5rem;
+}
+
+.mbt{
+  padding-top: 2rem;
+}
+
+.mbt1{
+  padding-top: 1.25rem;
+}
+
+a.link{
+  color: #ff90fd;
+}
+
+a.link:hover{
+  text-decoration: none;
+  color: rgb(85, 76, 255) !important;
+}
+
+.section-content{
+  font-family: 'Arial Rounded Bold' !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 28px !important;
+}
+
+ul.errorlist{
+  padding-top: .75rem;
+  font-style: italic;
+  color: red;
+}
+
+p#blog-content {
+  text-align: left;
+
+}
+
+
+
+/* Estilo para el servicio */
+.service-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  margin-bottom: 4px; /* Espacio entre los servicios */
+  height: 100%; /* Altura automática */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo para el título */
+.service-item h2 {
+  margin-top: 20px; /* Espacio superior */
+  margin-bottom: 20px; /* Espacio inferior */
+  padding: 0 20px; /* Ajuste de margen */
+}
+
+/* Estilo para la imagen */
+.service-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Estilo para el texto */
+.service-item .service-content {
+  padding: 25px;
+  flex-grow: 1;
+}
+
+/* Responsivo para dispositivos móviles */
+@media (max-width: 767px) {
+  .service-item:nth-child(1) {
+    margin-top: 90px; /* Espacio para el primer servicio */
+  }
+
+  .service-item:last-child {
+    margin-bottom: 5px;
+  }
+
+  /* Ajustar margen superior del footer */
+  footer {
+    margin-top: 100px;
+  }
+  
+}
